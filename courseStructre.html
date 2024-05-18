@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="courseStructre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    
+    <header>
+        <div
+            class="ch-landing-img-container ch-avatar-group-block"
+            id="ch-hand-logo-container"
+        >
+            <div class="ch-hand-wave-img-container">
+                <img
+                    class="ch-wave-img"
+                    alt="clubhouse wave"
+                    src=https://static-assets.clubhouseapi.com/static/img/img_hand_wave.3454a59f2b06.svg
+                    height="64"
+                />
+                <img
+                    class="ch-wave-img"
+                    alt="clubhouse wave"
+                    src=https://static-assets.clubhouseapi.com/static/img/img_hand_wave.3454a59f2b06.svg
+                    style="clip-path: inset(100% 0 0 0)"
+                    id="ch-hand-logo-dark-theme"
+                />
+            </div>
+        </div>
+        <div
+            class="ch-device-restricted--mobile ch-mobile-menu-container ch-theme ch-avatar-group-block"
+        >
+            <!-- <a class="ch-mobile-get-app-link" href="https://clubhouse.com/app"
+                >get the app</a
+            > -->
+            <div
+                class="ch-landing-img-container ch-device-restricted--mobile"
+                id="ch-hamburger-menu-container"
+            >
+                <img
+                    class="ch-hamburger-menu-img"
+                    id="ch-hamburger-menu-light-theme"
+                    alt="menu"
+                    src=https://static-assets.clubhouseapi.com/static/img/icon_hamburger_menu_dark.e3b1cf329cb8.svg
+                    id="ch-hamburger-menu-light-theme"
+                />
+                <img
+                    class="ch-hamburger-menu-img"
+                    alt="menu"
+                    src=https://static-assets.clubhouseapi.com/static/img/icon_hamburger_menu_dark.e3b1cf329cb8.svg
+                    style="clip-path: inset(100% 0 0 0)"
+                    id="ch-hamburger-menu-dark-theme"
+                />
+            </div>
+        </div>
+        <ul
+            class="ch-nav-links ch-theme ch-avatar-group-block"
+            data-theme="light"
+        >
+            <a href="#">
+                <li>Projects</li>
+            </a>
+            <a href="./Courses.html" target="_parent">
+                <li>Courses</li>
+            </a>
+            <li>
+                <button
+                    class="ch-btn--transparent ch-header-btn"
+                    id="ch-header-cta-btn"
+                >
+                    <a href="./Registration.html">Join Now</a>
+                </button>
+            </li>
+        </ul>
+    </header>
+    <h1>AI&ML Course Stracutre</h1>
+    <div class="faq-container">
+       
+        <div class="faq">
+            <h3 class="faq-title">
+                Module 1
+            </h3>
+
+            <p class="faq-text">
+                Day 1: Introduction to Data Science.<br><br>
+                Day 2: Python history, Installation, Explain about tools, Application of
+                python<br><br>
+                Day 3: Basics, Data types, keywords, operators.<br><br>
+                Day 4: I/O statements, conditional statements.<br><br>
+                Day 5: Loops, Programs.<br><br>
+
+            </p>
+
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-chevron-up"></i>
+            </button>
+        </div>
+
+        <div class="faq">
+            <h3 class="faq-title">
+                Module 2
+            </h3>
+
+            <p class="faq-text">
+                Day 1: List, arrays, strings.<br><br>
+                Day 2: Tuple, set, Dictionaries.<br><br>
+                Day 3: Functions.<br><br>
+                Day 4: Python library’s Numpy, Pandas.<br><br>
+                Day 5: Matplot lib, sklearn, seaborn.<br><br>
+            </p>
+
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-chevron-up"></i>
+            </button>
+        </div>
+
+        <div class="faq">
+            <h3 class="faq-title">
+                Module 3
+            </h3>
+
+            <p class="faq-text">
+                Day 1: Machine learning introduction, Machine learning types.<br><br>
+                Day 2: supervised learning, unsupervised, reinforcement.<br><br>
+                Day 3: Regression, Regression types.<br><br>
+                Day 4: Linear Regression, Linear Regression types.<br><br>
+                Day 5: SLR, MLR.<br><br>
+            </p>
+
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-chevron-up"></i>
+            </button>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title">
+                Module 4
+            </h3>
+
+            <p class="faq-text">
+                Day 1: Linear Regression practical.<br><br>
+                Day 2: Logistic Regression, Classification Algorithms.<br><br>
+                Day 3: Logistic Regression, practical.<br><br>
+                Day 4: Decision tree, Random Forest.<br><br>
+                Day 5: Gradient descent, Adaboost.<br><br>
+            </p>
+
+            <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-chevron-up"></i>
+            </button>
+        </div>
+    </div>
+    <script>
+        const toggles = document.querySelectorAll('.faq-toggle')
+
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                toggle.parentNode.classList.toggle('active')
+            })
+        })
+    </script>
+
+</body>
+
+</html>
